@@ -1,22 +1,25 @@
-# Minesweeper 3307
+# Minesweeper
 
 **A classic Minesweeper game** built with C++ and Qt. Use left-click to reveal cells, right-click to place flags, and reset the board by clicking the smiley face.
 
-Features
+**Features**
+- Grid: 30 columns × 16 rows, with 99 mines hidden randomly.
+- Graphics: Uses Qt for both rendering (tiles, face icon) and event handling.
+- Random Seed: Each run places bombs in different positions, making every game unique.
+- Reset: Click the smiley face at the top (positions x=5 or x=6, y=0) to restart the game.
 
-Grid: 30 columns × 16 rows, with 99 mines hidden randomly.
-Graphics: Uses Qt for both rendering (tiles, face icon) and event handling.
-Random Seed: Each run places bombs in different positions, making every game unique.
-Reset: Click the smiley face at the top (positions x=5 or x=6, y=0) to restart the game.
-Requirements
+
+  
+**Requirements**
 
 Qt (version 5 or higher)
 C++11 or newer compiler
 CMake or qmake (depending on your build preference)
-Building (Command-Line)
 
-Install Qt and Qt Creator or ensure qmake is available in your system PATH.
-Open a terminal in the project folder, then run:
+**Building (Command-Line)**
+
+1. Install Qt and Qt Creator or ensure qmake is available in your system PATH.
+2. Open a terminal in the project folder, then run:
 qmake
 make
 This will generate an executable named Minesweeper (or similar, depending on your OS).
